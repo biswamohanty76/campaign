@@ -8,6 +8,7 @@ import com.texhibit.candidate.services.CandidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -33,7 +34,7 @@ public class CandidateController {
     }
 
     @PostMapping("/candidate")
-    public Candidate addProduct(@RequestBody Candidate candidate) throws JsonProcessingException {
+    public Candidate addProduct(@RequestBody Candidate candidate) throws IOException {
 
         Candidate returnValue = candidateService.addCandidate(candidate);
         return returnValue;

@@ -23,6 +23,7 @@ public class Candidate{
     private List<CertificationsAndLicense> certificationsAndLicenses;
     private List<Reference> references;
     private String resumeOrCV;
+    private String resumePath;
 }
 
 

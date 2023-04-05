@@ -4,9 +4,11 @@ import com.texhibit.candidate.converters.ConvertToCandidateDto;
 import com.texhibit.candidate.dtos.CandidateDto;
 import com.texhibit.candidate.entities.Candidate;
 import com.texhibit.candidate.repositories.CandidateRepository;
+import com.texhibit.candidate.utils.Parser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,7 +23,9 @@ public class CandidateService {
         return candidateDtos;
     }
 
-    public Candidate addCandidate(Candidate candidate) {
+    public Candidate addCandidate(Candidate candidate) throws IOException {
+        String parseResume = Parser.parse(candidate.getResumePath());
+        candidate.setResumeOrCV(parseResume);
         Candidate temp = candidateRepository.save(candidate);
 
         return temp;
