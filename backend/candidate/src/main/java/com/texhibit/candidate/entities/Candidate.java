@@ -1,0 +1,28 @@
+package com.texhibit.candidate.entities;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Document(collection = "candidate")
+public class Candidate{
+    @Id
+    private String id;
+    private PersonalInformation personalInformation;
+    private List<WorkExperience> workExperience;
+    private List<Education> education;
+    private List<String> skills;
+    private List<CertificationsAndLicense> certificationsAndLicenses;
+    private List<Reference> references;
+    private String resumeOrCV;
+}
+
+
