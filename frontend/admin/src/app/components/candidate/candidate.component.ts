@@ -10,7 +10,7 @@ import { CandidateService } from './candidate.service';
 export class CandidateComponent implements OnInit {
 
   candidates: Candidate[]
-  displayedColumns = ['id', 'name', 'email', 'phone', 'gender']
+  displayedColumns = [ 'name', 'email', 'phone', 'gender','action']
   constructor(private candidateService:CandidateService) { }
 
   ngOnInit(): void {
