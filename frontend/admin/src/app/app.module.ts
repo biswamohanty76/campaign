@@ -37,6 +37,12 @@ import { registerLocaleData } from  '@angular/common';
 import { ForDirective } from './directives/for.directive';
 import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
 import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
+import { JobViewComponent } from './views/job-view/job-view.component';
+import { JobComponent } from './components/job/job.component';
+import { ContestViewComponent } from './views/contest-view/contest-view.component';
+import { ContestComponent } from './components/contest/contest.component';
+import { UserViewComponent } from './views/user-view/user-view.component';
+import { UserComponent } from './components/user/user.component';
 
 registerLocaleData(localePt);
 
@@ -56,7 +62,13 @@ registerLocaleData(localePt);
     ProductUpdateComponent,
     ProductDeleteComponent,
     CandidateViewComponent,
-    CandidateComponent
+    CandidateComponent,
+    JobViewComponent,
+    JobComponent,
+    ContestViewComponent,
+    ContestComponent,
+    UserViewComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

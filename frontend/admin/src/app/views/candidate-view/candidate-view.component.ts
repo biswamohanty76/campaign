@@ -9,7 +9,7 @@ import { HeaderService } from 'src/app/components/template/header/header.service
 export class CandidateViewComponent implements OnInit {
 
   constructor(private headerService: HeaderService) {
-    headerService.headerData = {
+    this.headerService.headerData = {
       title: "Candidates",
       icon: "people",
       routeUrl: "/candidates",

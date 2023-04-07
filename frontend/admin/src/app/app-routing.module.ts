@@ -7,6 +7,9 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
+import { JobComponent } from './components/job/job.component';
+import { ContestComponent } from './components/contest/contest.component';
+import { UserComponent } from './components/user/user.component';
 
 
 const routes: Routes = [
@@ -18,6 +21,18 @@ const routes: Routes = [
     path:"candidates",
     component: CandidateComponent
   },
+  {
+    path:"jobs",
+    component:JobComponent
+  },
+  {
+    path:"contests",
+    component:ContestComponent
+  },
+  {
+    path:"users",
+    component:UserComponent
+  }
   // {
   //   path: "products",
   //   component: ProductCrudComponent
