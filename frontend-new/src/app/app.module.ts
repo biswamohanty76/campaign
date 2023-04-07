@@ -21,6 +21,7 @@ import { UserComponent } from './user/user.component';
 import { ContestComponent } from './contest/contest.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTooltip } from '@angular/material/tooltip';
+import { TenantComponent } from './tenant/tenant.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { MatTooltip } from '@angular/material/tooltip';
     JobComponent,
     UserComponent,
     ContestComponent,
+    TenantComponent,
   ],
   imports: [
     BrowserModule,

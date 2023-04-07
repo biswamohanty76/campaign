@@ -6,6 +6,7 @@ import { CandidateComponent } from './candidate/candidate.component';
 import { JobComponent } from './job/job.component';
 import { ContestComponent } from './contest/contest.component';
 import { UserComponent } from './user/user.component';
+import { TenantComponent } from './tenant/tenant.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -15,10 +16,11 @@ const routes: Routes = [
   { path: 'jobs', component: JobComponent },
   { path: 'contests', component: ContestComponent },
   { path: 'users', component: UserComponent },
+  { path: 'tenants', component: TenantComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

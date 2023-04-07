@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.texhibit</groupId>
-	<artifactId>candidateOld</artifactId>
+	<artifactId>candidate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>candidateOld</name>
 	<description>Candidate Management</description>
