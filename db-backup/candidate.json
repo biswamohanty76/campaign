@@ -1,0 +1,342 @@
+[{
+  "_id": {
+    "$oid": "64283d805264700a4ce19f1f"
+  },
+  "personalInformation": {
+    "name": "John doe",
+    "contactInformation": {
+      "email": "johndoewe@email.com",
+      "phoneNumber": "998-565-7777",
+      "address": "123 Main St, Anytown, USA",
+      "nationality": "American",
+      "workAuthorizationStatus": "Authorized to work in the United States",
+      "gender": "Male",
+      "dateOfBirth": "01/01/1965"
+    }
+  },
+  "workExperience": [
+    {
+      "companyName": "Acme Inc.",
+      "jobTitle": "Software Engineer",
+      "employmentDates": "01/01/2020 - Present",
+      "jobDescription": "Developed and maintained software applications using Java and Spring Framework",
+      "accomplishments": "Implemented new features that improved system performance by 50%"
+    },
+    {
+      "companyName": "XYZ Corp.",
+      "jobTitle": "Web Developer",
+      "employmentDates": "01/01/2018 - 12/31/2019",
+      "jobDescription": "Developed and maintained websites using HTML, CSS, and JavaScript",
+      "accomplishments": "Designed and developed a new website that increased user engagement by 20%"
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "University of Anytown",
+      "degreeType": "Bachelor's",
+      "major": "Computer Science",
+      "graduationDate": "05/01/2018"
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Framework",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Teamwork",
+    "Communication",
+    "Problem Solving"
+  ],
+  "certificationsAndLicenses": [
+    {
+      "name": "Oracle Certified Professional, Java SE 11 Developer",
+      "issuedBy": "Oracle",
+      "issueDate": "01/01/2021"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "jobTitle": "Manager",
+      "companyName": "Acme Inc.",
+      "email": "jane.smith@email.com",
+      "phoneNumber": "555-555-5555"
+    }
+  ],
+  "resumeOrCV": "https://example.com/resume.pdf",
+  "_class": "com.texhibit.candidate.entities.Candidate"
+},{
+  "_id": {
+    "$oid": "64287b192b2d640f49e1dfa7"
+  },
+  "personalInformation": {
+    "name": "Valid json one",
+    "contactInformation": {
+      "email": "johndoe@email.com",
+      "phoneNumber": "555-555-5555",
+      "address": "123 Main St, Anytown, USA",
+      "nationality": "American",
+      "workAuthorizationStatus": "Authorized to work in the United States",
+      "gender": "Male",
+      "dateOfBirth": "01/01/1990"
+    }
+  },
+  "workExperience": [
+    {
+      "companyName": "Acme Inc.",
+      "jobTitle": "Software Engineer",
+      "employmentDates": "01/01/2020 - Present",
+      "jobDescription": "Developed and maintained software applications using Java and Spring Framework",
+      "accomplishments": "Implemented new features that improved system performance by 50%"
+    },
+    {
+      "companyName": "XYZ Corp.",
+      "jobTitle": "Web Developer",
+      "employmentDates": "01/01/2018 - 12/31/2019",
+      "jobDescription": "Developed and maintained websites using HTML, CSS, and JavaScript",
+      "accomplishments": "Designed and developed a new website that increased user engagement by 20%"
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "University of Anytown",
+      "degreeType": "Bachelor's",
+      "major": "Computer Science",
+      "graduationDate": "05/01/2018"
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Framework",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Teamwork",
+    "Communication",
+    "Problem Solving"
+  ],
+  "certificationsAndLicenses": [
+    {
+      "name": "Oracle Certified Professional, Java SE 11 Developer",
+      "issuedBy": "Oracle",
+      "issueDate": "01/01/2021"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "jobTitle": "Manager",
+      "companyName": "Acme Inc.",
+      "email": "jane.smith@email.com",
+      "phoneNumber": "555-555-5555"
+    }
+  ],
+  "resumeOrCV": "https://example.com/resume.pdf",
+  "_class": "com.texhibit.candidate.entities.Candidate"
+},{
+  "_id": {
+    "$oid": "642dc74b5b11da27db7358c0"
+  },
+  "personalInformation": {
+    "name": "New Candidate",
+    "contactInformation": {
+      "email": "johndoe@email.com",
+      "phoneNumber": "556-555-5555",
+      "address": "123 Main St, Anytown, USA",
+      "nationality": "American",
+      "workAuthorizationStatus": "Authorized to work in the United States",
+      "gender": "Male",
+      "dateOfBirth": "01/01/1980"
+    }
+  },
+  "workExperience": [
+    {
+      "companyName": "Acme Inc.",
+      "jobTitle": "Software Engineer",
+      "employmentDates": "01/01/2020 - Present",
+      "jobDescription": "Developed and maintained software applications using Java and Spring Framework",
+      "accomplishments": "Implemented new features that improved system performance by 50%"
+    },
+    {
+      "companyName": "XYZ Corp.",
+      "jobTitle": "Web Developer",
+      "employmentDates": "01/01/2018 - 12/31/2019",
+      "jobDescription": "Developed and maintained websites using HTML, CSS, and JavaScript",
+      "accomplishments": "Designed and developed a new website that increased user engagement by 20%"
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "University of Anytown",
+      "degreeType": "Bachelor's",
+      "major": "Computer Science",
+      "graduationDate": "05/01/2018"
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Framework",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Teamwork",
+    "Communication",
+    "Problem Solving"
+  ],
+  "certificationsAndLicenses": [
+    {
+      "name": "Oracle Certified Professional, Java SE 11 Developer",
+      "issuedBy": "Oracle",
+      "issueDate": "01/01/2021"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "jobTitle": "Manager",
+      "companyName": "Acme Inc.",
+      "email": "jane.smith@email.com",
+      "phoneNumber": "555-555-5555"
+    }
+  ],
+  "resumeOrCV": "https://example.com/resume.pdf",
+  "_class": "com.texhibit.candidate.entities.Candidate"
+},{
+  "_id": {
+    "$oid": "642dc7d1b8a4284d0fea7bde"
+  },
+  "personalInformation": {
+    "name": "New Candidate One",
+    "contactInformation": {
+      "email": "johndoe@email.com",
+      "phoneNumber": "556-555-5557",
+      "address": "123 Main St, Anytown, USA",
+      "nationality": "American",
+      "workAuthorizationStatus": "Authorized to work in the United States",
+      "gender": "Male",
+      "dateOfBirth": "01/05/1980"
+    }
+  },
+  "workExperience": [
+    {
+      "companyName": "Acme Inc.",
+      "jobTitle": "Software Engineer",
+      "employmentDates": "01/01/2020 - Present",
+      "jobDescription": "Developed and maintained software applications using Java and Spring Framework",
+      "accomplishments": "Implemented new features that improved system performance by 50%"
+    },
+    {
+      "companyName": "XYZ Corp.",
+      "jobTitle": "Web Developer",
+      "employmentDates": "01/01/2018 - 12/31/2019",
+      "jobDescription": "Developed and maintained websites using HTML, CSS, and JavaScript",
+      "accomplishments": "Designed and developed a new website that increased user engagement by 20%"
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "University of Anytown",
+      "degreeType": "Bachelor's",
+      "major": "Computer Science",
+      "graduationDate": "05/01/2018"
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Framework",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Teamwork",
+    "Communication",
+    "Problem Solving"
+  ],
+  "certificationsAndLicenses": [
+    {
+      "name": "Oracle Certified Professional, Java SE 11 Developer",
+      "issuedBy": "Oracle",
+      "issueDate": "01/01/2021"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "jobTitle": "Manager",
+      "companyName": "Acme Inc.",
+      "email": "jane.smith@email.com",
+      "phoneNumber": "555-555-5555"
+    }
+  ],
+  "resumeOrCV": "RESUME \r\n \r\nItishri Das \r\nc/o Biswa Bhusan Mohanty \r\n#1, 1st cross, 1st Lane, \r\nRajashri Layout, Munekolala, \r\nMarathalli Post, Bangalore-560037 \r\nPh: 8050635849 \r\nemail id: itishreedas80@gmail.com \r\n \r\nObjectives:  \r\nTo pursue a career in a challenging environment where I can utilise \r\nand enhance my educational qualification and my knowledge to work \r\ntoward achieving the organisational goal in an efficient manner. \r\n \r\nCompetencies:  \r\n \r\n Familiar with the principles of nursery education, curriculum planning \r\nand children’s overall development. \r\n Comprehensive knowledge of handling nursery school children.  \r\n Ability to build good rapport with parents, teachers, colleagues and \r\nchildren. \r\n Patience and hardworking with good motivational skills. Strong \r\nknowledge about managing classes. \r\n \r\nEducational profile:   \r\n \r\n M.A (economics) \r\n MBA (pursuing) \r\n NTT (Nursery Teachers Training) \r\n \r\nExperience:  \r\n \r\nPrimary teacher in a school for 6 month. \r\n \r\nDeclaration: \r\n \r\nI hereby declared that the above document is true in best of my \r\nknowledge.                                                                                    \r\n                                                                                         Place: Bangalore  \r\n \r\nDate:         Itishri Das                                                           \r\n",
+  "_class": "com.texhibit.candidate.entities.Candidate"
+},{
+  "_id": {
+    "$oid": "642dc97842e9cc27c4b85246"
+  },
+  "personalInformation": {
+    "name": "New Candidate One",
+    "contactInformation": {
+      "email": "johndoe@email.com",
+      "phoneNumber": "556-555-5557",
+      "address": "123 Main St, Anytown, USA",
+      "nationality": "American",
+      "workAuthorizationStatus": "Authorized to work in the United States",
+      "gender": "Male",
+      "dateOfBirth": "01/05/1980"
+    }
+  },
+  "workExperience": [
+    {
+      "companyName": "Acme Inc.",
+      "jobTitle": "Software Engineer",
+      "employmentDates": "01/01/2020 - Present",
+      "jobDescription": "Developed and maintained software applications using Java and Spring Framework",
+      "accomplishments": "Implemented new features that improved system performance by 50%"
+    },
+    {
+      "companyName": "XYZ Corp.",
+      "jobTitle": "Web Developer",
+      "employmentDates": "01/01/2018 - 12/31/2019",
+      "jobDescription": "Developed and maintained websites using HTML, CSS, and JavaScript",
+      "accomplishments": "Designed and developed a new website that increased user engagement by 20%"
+    }
+  ],
+  "education": [
+    {
+      "schoolName": "University of Anytown",
+      "degreeType": "Bachelor's",
+      "major": "Computer Science",
+      "graduationDate": "05/01/2018"
+    }
+  ],
+  "skills": [
+    "Java",
+    "Spring Framework",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Teamwork",
+    "Communication",
+    "Problem Solving"
+  ],
+  "certificationsAndLicenses": [
+    {
+      "name": "Oracle Certified Professional, Java SE 11 Developer",
+      "issuedBy": "Oracle",
+      "issueDate": "01/01/2021"
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "jobTitle": "Manager",
+      "companyName": "Acme Inc.",
+      "email": "jane.smith@email.com",
+      "phoneNumber": "555-555-5555"
+    }
+  ],
+  "resumeOrCV": "RESUME \r\n \r\nItishri Das \r\nc/o Biswa Bhusan Mohanty \r\n#1, 1st cross, 1st Lane, \r\nRajashri Layout, Munekolala, \r\nMarathalli Post, Bangalore-560037 \r\nPh: 8050635849 \r\nemail id: itishreedas80@gmail.com \r\n \r\nObjectives:  \r\nTo pursue a career in a challenging environment where I can utilise \r\nand enhance my educational qualification and my knowledge to work \r\ntoward achieving the organisational goal in an efficient manner. \r\n \r\nCompetencies:  \r\n \r\n Familiar with the principles of nursery education, curriculum planning \r\nand children’s overall development. \r\n Comprehensive knowledge of handling nursery school children.  \r\n Ability to build good rapport with parents, teachers, colleagues and \r\nchildren. \r\n Patience and hardworking with good motivational skills. Strong \r\nknowledge about managing classes. \r\n \r\nEducational profile:   \r\n \r\n M.A (economics) \r\n MBA (pursuing) \r\n NTT (Nursery Teachers Training) \r\n \r\nExperience:  \r\n \r\nPrimary teacher in a school for 6 month. \r\n \r\nDeclaration: \r\n \r\nI hereby declared that the above document is true in best of my \r\nknowledge.                                                                                    \r\n                                                                                         Place: Bangalore  \r\n \r\nDate:         Itishri Das                                                           \r\n",
+  "resumePath": "F://resume1.pdf",
+  "_class": "com.texhibit.candidate.entities.Candidate"
+}]
