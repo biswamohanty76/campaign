@@ -22,6 +22,7 @@ import { ContestComponent } from './contest/contest.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTooltip } from '@angular/material/tooltip';
 import { TenantComponent } from './tenant/tenant.component';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { TenantComponent } from './tenant/tenant.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

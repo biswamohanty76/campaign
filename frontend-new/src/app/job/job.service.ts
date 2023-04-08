@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Job } from './job.model';
 import { EMPTY, Observable } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class JobService {
   baseUrl = "http://localhost:12446/api/jobs";
 
 
-  constructor( private http: HttpClient) { }
+  constructor( private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string, isError: boolean = false): void {
     // this.snackBar.open(msg, "X", {
@@ -29,8 +30,9 @@ export class JobService {
     );
   }
 
+
   errorHandler(e: any): Observable<any> {
-    this.showMessage("An error has occurred!", true);
+    this.showMessage("An error has occurred while fetching!", true);
     return EMPTY;
   }
  
