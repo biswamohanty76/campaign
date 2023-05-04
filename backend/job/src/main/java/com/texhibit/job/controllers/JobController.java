@@ -3,7 +3,6 @@ package com.texhibit.job.controllers;
 import com.texhibit.job.dtos.JobDto;
 import com.texhibit.job.entities.Job;
 import com.texhibit.job.services.JobService;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

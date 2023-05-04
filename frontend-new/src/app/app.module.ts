@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,10 +23,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTooltip } from '@angular/material/tooltip';
 import { TenantComponent } from './tenant/tenant.component';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { MatFormFieldControl, MatFormFieldModule, MatLabel } from '@angular/material/form-field';
+import {MatCardModule} from '@angular/material/card';
+import {  MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
+import { MatInput, MatInputModule } from '@angular/material/input';
+import { RouterModule } from '@angular/router';
+import { AuthService } from './auth/auth.service';
+import { AuthGuard } from './auth/auth,guard';
+import { LoginLayoutComponent } from './layouts/login-layout.component';
+import { DashboardLayoutComponent } from './layouts/dashboard-layout.component';
+
 
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     HeaderComponent,
     HomeComponent,
@@ -37,12 +50,18 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     UserComponent,
     ContestComponent,
     TenantComponent,
-  ],
+      LoginComponent,
+      SignupComponent,
+      LoginLayoutComponent,
+      DashboardLayoutComponent
+      
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,    
     HttpClientModule,
+    RouterModule,
     // * MATERIAL IMPORTS
     MatSidenavModule,
     MatToolbarModule,
@@ -52,9 +71,17 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     MatListModule,
     MatTableModule,
     MatSnackBarModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatSelectModule,
+    MatOptionModule,
+MatInputModule,
+
+    
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: [AuthService, AuthGuard],
+  bootstrap: [AppComponent],  
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   entryComponents: [CandidateComponent]
 })
 export class AppModule {}
