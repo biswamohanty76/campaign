@@ -13,7 +13,7 @@ import AppLayout from '../src/views/shared/_Layout.vue';
 export default defineComponent({
   name: 'App',
   components: {
-    AppLayout
+    AppLayout,
   },
   data() {
     return {

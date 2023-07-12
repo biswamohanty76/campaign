@@ -10,7 +10,8 @@
     "dev": "vite",
     "format": "prettier --write src/",
     "preview": "vite preview",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "codegen-fetch": "openapi-generator-cli generate -i http://localhost:7143/api/swagger.json -g typescript-fetch -o ./src/openapi --additional-properties=ngVersion=supportsES6=true,withInterfaces=true"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
@@ -24,6 +25,7 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.6.0",
     "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.14.2",
     "@types/webfontloader": "^1.0.0",

@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
+        "projectName": "Culturecubs.Microsite.DataAccess",
+        "projectPath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\varshnea2053\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\varshnea2053\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/Arcadis/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.19, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
