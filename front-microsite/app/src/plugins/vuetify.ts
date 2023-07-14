@@ -14,11 +14,11 @@ var themApi = new ThemeApi();
 
 
 export const myCustomLightTheme = {
-  tenantIcon: '',
+  tenantIcon: '../../assets/images/logo.png',
   tenantLogo: '../../assets/images/logo.png',
   dark: false,
   colors: {
-    background: '#FFFFFF',
+    background: '#6fc232',
     surface: '#FFFFFF',
     primary: '#009000',
     'primary-darken-1': '#3700B3',
@@ -37,6 +37,7 @@ export async function createCustomVuetify(route: any) {
   try {
     themeConfig = await fetchThemeConfig(route);
   } catch (error) {
+    themeConfig = myCustomLightTheme;
     console.log('Failed to fetch theme configuration:', error);
   }
 
@@ -60,13 +61,14 @@ export async function createCustomVuetify(route: any) {
 async function fetchThemeConfig(route: any): Promise<ThemeConfig> {
   try {
     // if (route.params.id !== undefined) {
-    var tenantId = 'B97684C9-7ACD-40DC-80AC-42F1D0E2F068' //route.params.id.toString();
+    var tenantId = '4AD5F022-C5C3-4DB5-BAE9-DACCFCED0782' //route.params.id.toString();
     return themApi.getthemebytenantid({ guid: tenantId })
       .then((response) => {
-        //console.log(response)
+        console.log(response)
         return mapThemeConfigurationToThemeConfig(response); // Call a function to map the response to the theme configuration
       })
       .catch(error => {
+        return mapThemeConfigurationToThemeConfig(myCustomLightTheme)
         console.log(error);
         throw error;
       });
@@ -105,11 +107,11 @@ export interface ThemeConfig {
     tenantIcon: themeConfiguration?.tenantIcon||'',
     tenantLogo: themeConfiguration?.tenatLogo||'../../assets/images/logo.png',
     colors: {
-      background: themeConfiguration.background || '#FFFFFF',
+      background: themeConfiguration.background || '#8fa9e9',
       surface: themeConfiguration.surface || '#FFFFFF',
-      primary: themeConfiguration.primary || '#009000',
-      'primary-darken-1': themeConfiguration.primaryDarken1 || '#3700B3',
-      secondary: themeConfiguration.secondary || '#03DAC6',
+      primary: themeConfiguration.primary || '#0c2054',
+      'primary-darken-1': themeConfiguration.primaryDarken1 || '#0c2054',
+      secondary: themeConfiguration.secondary || '#e5ebfa',
       'secondary-darken-1': themeConfiguration.secondaryDarken1 || '#018786',
       error: themeConfiguration.error || '#B00020',
       info: themeConfiguration.info || '#2196F3',
