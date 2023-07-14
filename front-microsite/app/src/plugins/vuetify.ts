@@ -9,11 +9,13 @@ import * as labsComponents from 'vuetify/labs/components'
 import type { ThemeConfiguration } from '@/openapi/models'
 import { ThemeApi } from '@/openapi'
 import { useRoute, useRouter } from 'vue-router'
-var themApi = new  ThemeApi();
+var themApi = new ThemeApi();
 
 
 
-const myCustomLightTheme = {
+export const myCustomLightTheme = {
+  tenantIcon: '',
+  tenantLogo: '../../assets/images/logo.png',
   dark: false,
   colors: {
     background: '#FFFFFF',
@@ -28,9 +30,9 @@ const myCustomLightTheme = {
     warning: '#FB8C00',
   }
 }
-
-export async function createCustomVuetify(route:any) {
-  let themeConfig = {};
+export let themeConfig = {};
+export async function createCustomVuetify(route: any) {
+  
 
   try {
     themeConfig = await fetchThemeConfig(route);
@@ -57,20 +59,21 @@ export async function createCustomVuetify(route:any) {
 
 async function fetchThemeConfig(route: any): Promise<ThemeConfig> {
   try {
-    if (route.params.id !== undefined) {
-      var tenantId = route.params.id.toString();
-      return themApi.getthemebytenantid({ guid: tenantId })
-        .then((response) => {
-          return mapThemeConfigurationToThemeConfig(response); // Call a function to map the response to the theme configuration
-        })
-        .catch(error => {
-          console.log(error);
-          throw error;
-        });
-    } else {
-      // Handle the case when tenant ID is not defined
-      throw new Error('Tenant ID is undefined');
-    }
+    // if (route.params.id !== undefined) {
+    var tenantId = 'B97684C9-7ACD-40DC-80AC-42F1D0E2F068' //route.params.id.toString();
+    return themApi.getthemebytenantid({ guid: tenantId })
+      .then((response) => {
+        //console.log(response)
+        return mapThemeConfigurationToThemeConfig(response); // Call a function to map the response to the theme configuration
+      })
+      .catch(error => {
+        console.log(error);
+        throw error;
+      });
+    // } else {
+    //   // Handle the case when tenant ID is not defined
+    //   throw new Error('Tenant ID is undefined');
+    // }
   } catch (error) {
     console.log('Error fetching theme configuration:', error);
     // You can handle the error as per your application's requirements
@@ -80,6 +83,8 @@ async function fetchThemeConfig(route: any): Promise<ThemeConfig> {
 
 export interface ThemeConfig {
   dark: boolean;
+  tenantIcon: string;
+  tenantLogo: string;
   colors: {
     background: string;
     surface: string;
@@ -94,9 +99,11 @@ export interface ThemeConfig {
   };
 }
 
-function mapThemeConfigurationToThemeConfig(themeConfiguration: ThemeConfiguration): ThemeConfig {
+ function mapThemeConfigurationToThemeConfig(themeConfiguration: ThemeConfiguration): ThemeConfig {
   const themeConfig: ThemeConfig = {
     dark: false,
+    tenantIcon: themeConfiguration?.tenantIcon||'',
+    tenantLogo: themeConfiguration?.tenatLogo||'../../assets/images/logo.png',
     colors: {
       background: themeConfiguration.background || '#FFFFFF',
       surface: themeConfiguration.surface || '#FFFFFF',

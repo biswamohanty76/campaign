@@ -3,7 +3,9 @@
     <v-container fluid>
       <v-row>
         <v-col cols="9">
-          <div class="green-base-image"></div>
+          <div class="green-base-image"> // Registraiton Image could be used as per tenant Id 
+            
+          </div>
         </v-col>
         <v-col cols="3">
           <v-card>
@@ -23,7 +25,7 @@
                   </v-col>
                   <v-col cols="auto">
                     <v-spacer></v-spacer>
-                    <v-btn class="bg-green-lighten-1" block>Cancel</v-btn>
+                    <v-btn color="secondary" block>Cancel</v-btn>
                   </v-col>
                 </v-row>
               </v-form>

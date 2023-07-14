@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-layout>
+    <v-layout class="background">
       <AppLayout></AppLayout>
       <router-view />
     </v-layout>
@@ -23,10 +23,6 @@ export default defineComponent({
 })
 </script>
 <style>
-.v-main {
-  background-color: #f5f5f5 !important;
-}
-
 html {
   overflow: hidden !important;
 }

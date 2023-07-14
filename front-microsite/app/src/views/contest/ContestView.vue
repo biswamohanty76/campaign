@@ -30,62 +30,53 @@
         </v-col>
       </v-row>
       <v-dialog v-model="showContestPopup" style="max-width: 73%; max-height: 80%;">
-  <v-card class="elevation-1" max-width="100%" max-height="100%">
-    <v-card-title>{{ selectedContest.title }}</v-card-title>
-    <v-tabs v-model="activeTab">
-      <v-tab v-for="(tab, index) in selectedContest.tabs" :key="index" :value="tab.key">
-        {{ tab.key }}
-      </v-tab>
-    </v-tabs>
+        <v-card class="elevation-1" max-width="100%" max-height="100%">
+          <v-card-title>{{ selectedContest.title }}</v-card-title>
+          <v-tabs v-model="activeTab">
+            <v-tab v-for="(tab, index) in selectedContest.tabs" :key="index" :value="tab.key">
+              {{ tab.key }}
+            </v-tab>
+          </v-tabs>
 
-    <v-card-text>
-      <v-window v-model="activeTab">
-        <v-window-item v-for="(tab, index) in selectedContest.tabs" :key="index" :value="tab.key">
-          <v-card-text v-html="tab.value"></v-card-text>
-        </v-window-item>
-      </v-window>
-    </v-card-text>
+          <v-card-text>
+            <v-window v-model="activeTab">
+              <v-window-item v-for="(tab, index) in selectedContest.tabs" :key="index" :value="tab.key">
+                <v-card-text v-html="tab.value"></v-card-text>
+              </v-window-item>
+            </v-window>
+          </v-card-text>
 
-    <v-card-actions>
-      <v-btn color="primary" @click="registerForContest(selectedContest)">Register</v-btn>
-      <v-btn color="secondary" @click="closeContestPopup">Close</v-btn>
-    </v-card-actions>
-  </v-card>
-</v-dialog>
-
-
+          <v-card-actions>
+            <v-btn color="primary" @click="registerForContest(selectedContest)">Register</v-btn>
+            <v-btn color="secondary" @click="closeContestPopup">Close</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
     </v-container>
-
-
   </v-main>
 </template>
 
 <script lang="ts" setup>
 import { ContestApi } from '../../openapi/apis/ContestApi'
 import type { Contest, ContestTab } from '../../openapi/models'
-import { ref,onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 const router = useRouter()
 const route = useRoute();
 var contestApi = new ContestApi();
-  const pageLoading = ref(true);
+const pageLoading = ref(true);
 const selectedContest = ref({
   title: '',
   tabs: {},
 })
-const registerForContest = (contest) => {
-  // Implement registration logic
-
-  // Open the registration view page
+const registerForContest = () => {
   router.push({ name: 'Registration' });
 };
 const activeTab = ref('')
 
-
 const showContestPopup = ref(false)
-
-const openContestPopup = (contest) => {
+const openContestPopup = (contest:any) => {
   selectedContest.value = contest
   console.log(selectedContest.value);
   showContestPopup.value = true
@@ -94,18 +85,14 @@ const openContestPopup = (contest) => {
 const closeContestPopup = () => {
   showContestPopup.value = false
 }
-
-
-const formatDate = (date) => {
+const formatDate = (date:any) => {
   const options = { year: 'numeric', month: 'long', day: 'numeric' }
   return date.toLocaleDateString(undefined, options)
 }
-
 const contestList = ref<Contest[]>([]);
-
 onMounted(() => {
   if (route.params.id !== undefined) {
-    var tenantId = route.params.id.toString();      
+    var tenantId = route.params.id.toString();
     contestApi.getcontestsbytenantid({ guid: tenantId })
       .then((response) => {
         contestList.value = response as Contest[]; // Type assertion to assign the response data
@@ -115,7 +102,7 @@ onMounted(() => {
         console.log(error);
       });
   } else {
-    pageLoading.value = false; 
+    pageLoading.value = false;
   }
 });
 </script>
@@ -125,42 +112,34 @@ onMounted(() => {
   transition: transform 0.2s;
   cursor: pointer;
 }
-
 .v-card:hover {
   transform: scale(1.05);
 }
-
 .v-card-title {
   font-size: 20px;
   font-weight: bold;
   padding: 16px;
 }
-
 .v-card-text {
   padding: 0 16px 16px;
 }
-
 .v-dialog {
   max-width: 600px;
 }
-
 .v-dialog .v-card-title {
   font-size: 24px;
   font-weight: bold;
   padding: 16px;
 }
-
 .v-dialog .v-card-text {
   padding: 16px;
 }
-
 .custom-card {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   max-height: 250px;
 }
-
 .contests-container {
   overflow-x: auto;
   white-space: nowrap;

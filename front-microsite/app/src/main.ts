@@ -10,7 +10,7 @@ const route = useRoute();
 async function initializeApp() {
   
   const vuetify = await createCustomVuetify(route);
-
+  console.log(vuetify)
   createApp(App)
     .use(router)
     .use(vuetify)
