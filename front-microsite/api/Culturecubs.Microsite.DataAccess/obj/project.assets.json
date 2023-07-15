@@ -2388,11 +2388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\compaign\\front-microsite\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
       "projectName": "Culturecubs.Microsite.DataAccess",
-      "projectPath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
+      "projectPath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\compaign\\front-microsite\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
       "packagesPath": "C:\\Users\\varshnea2053\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\compaign\\front-microsite\\api\\Culturecubs.Microsite.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\varshnea2053\\AppData\\Roaming\\NuGet\\NuGet.Config",

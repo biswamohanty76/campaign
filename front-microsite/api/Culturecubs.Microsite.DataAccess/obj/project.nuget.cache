@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KyIYX69PVEh7MnPJsjXhvfQKwCPayj0T+UjWrj4BVXT2qMmme8B2BcZbQxtAb6K07pRvex1522wvKrUBI+GEKw==",
+  "dgSpecHash": "xqQ4jk+GmZ3psAQVtNLrAW0riYFNMlhrRCnJINSgwdiaZPghxmJzmyfq6K1epfI5/NBxnz1b5BqcBSkCIgguug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\Personal\\microsite-vue-dynamic\\microsite-vue-dynamic\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\varshnea2053\\source\\repos\\Learning\\compaign\\front-microsite\\api\\Culturecubs.Microsite.DataAccess\\Culturecubs.Microsite.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\varshnea2053\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\varshnea2053\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
