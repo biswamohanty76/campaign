@@ -43,6 +43,12 @@ export interface ContestTab {
      * @memberof ContestTab
      */
     contestId?: number;
+    /**
+     * 
+     * @type {number}
+     * @memberof ContestTab
+     */
+    orderNumber?: number;
 }
 
 /**
@@ -68,6 +74,7 @@ export function ContestTabFromJSONTyped(json: any, ignoreDiscriminator: boolean)
         'key': !exists(json, 'key') ? undefined : json['key'],
         'value': !exists(json, 'value') ? undefined : json['value'],
         'contestId': !exists(json, 'contestId') ? undefined : json['contestId'],
+        'orderNumber': !exists(json, 'orderNumber') ? undefined : json['orderNumber'],
     };
 }
 
@@ -84,6 +91,7 @@ export function ContestTabToJSON(value?: ContestTab | null): any {
         'key': value.key,
         'value': value.value,
         'contestId': value.contestId,
+        'orderNumber': value.orderNumber,
     };
 }
 
