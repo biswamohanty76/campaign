@@ -17,5 +17,6 @@ namespace Culturecubs.Microsite.DataAccess.Models
         public string? Key { get; set; }
         public string? Value { get; set; }
         public int ContestId { get; set; }
+        public int OrderNumber { get; set; }
     }
 }
