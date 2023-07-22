@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Data
 @Getter
-public class ExperienceRage {
+public class ExperienceRange {
     private Integer expFrom;
     private Integer expTo;
 }

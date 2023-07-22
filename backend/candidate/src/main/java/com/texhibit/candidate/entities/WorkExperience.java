@@ -14,4 +14,6 @@ public class WorkExperience {
     private String employmentDates;
     private String jobDescription;
     private String accomplishments;
+    private double experienceFrom;
+    private double experienceTo;
 }

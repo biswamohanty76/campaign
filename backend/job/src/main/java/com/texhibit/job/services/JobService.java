@@ -47,4 +47,12 @@ public class JobService {
     public Integer getCount() {
         return Math.toIntExact(jobRepository.count());
     }
+
+    public boolean publishJob(String id) {
+        Optional<Job> job = jobRepository.findById(id);
+        Job jobToPublish = job.get();
+        jobToPublish.setPublished(true);
+        jobRepository.save(jobToPublish);
+        return true;
+    }
 }

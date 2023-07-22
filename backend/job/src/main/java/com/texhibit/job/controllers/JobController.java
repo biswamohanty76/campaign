@@ -49,4 +49,9 @@ public class JobController {
     public Integer getCount(){
         return jobService.getCount();
     }
+
+    @GetMapping("/jobs/publish/{id}")
+    public boolean publishJob(@PathVariable String id){
+        return jobService.publishJob(id);
+    }
 }

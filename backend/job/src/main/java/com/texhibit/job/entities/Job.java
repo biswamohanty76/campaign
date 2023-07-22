@@ -25,5 +25,6 @@ public class Job {
     private String validThrough;
     private List<String> skills;
     private Integer positions;
-    private ExperienceRage experienceRange;
+    private ExperienceRange experienceRange;
+    private boolean isPublished;
 }
